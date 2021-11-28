@@ -1,0 +1,5 @@
+project(old_verison)
+set(SRC gonnacry.c lib/func.c lib/struct.c lib/crypto.c)
+add_compile_options(-lcrypto)
+include_directories("~/temp/openssl/include")
+add_library(libold ${SRC})
